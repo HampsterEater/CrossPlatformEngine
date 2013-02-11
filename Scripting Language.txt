@@ -1,0 +1,154 @@
+----------------------------------------------------------------
+Icarus Game Engine
+Scripting Language (IScript)
+----------------------------------------------------------------
+
+IScript is the scripting language used by the icarus game engine
+It's based primarily off a C++ style syntax with numerous 
+additional functions added to ease development within games.
+
+----------------------------------------------------------------
+Comments
+----------------------------------------------------------------
+
+Comments in IScript are defined using the standard C and CP
+P syntax.
+
+	// this is a comment
+	/*
+		This is a multiline comment
+	*/
+
+Multiline comments can be nested unlike most C languages.
+
+----------------------------------------------------------------
+Numbers
+----------------------------------------------------------------
+
+IScript supports integer and float literals, these can be 
+defined in a variaty of different formats, based primarily
+on the CPP syntax.
+
+Octal numbers begin with a 0;
+
+	0112
+
+Hexidecimal numbers betwen with an 0x or 0X
+
+	0x1234ABCD
+	0X1234ABCD
+
+Floats contain a radix and can also contain an exponent
+
+	.123123
+	0.2134234
+	3.16e+19
+	.e-010
+	1e-010
+
+Integers are .. well integers;
+
+	+234234234234
+	-234234234234
+	234234234234
+
+All numbers can also be prefixed with a unary positive or
+negative + / - to change its sign.
+
+----------------------------------------------------------------
+Identifiers
+----------------------------------------------------------------
+
+Identifiers can contain any combination of underscores and 
+alphanumeric letters. The only catch is that an identifier 
+can not start with a number.
+
+These are all valid identifiers;
+
+	_AS12312312_zxc_v
+	asdzx2134SDFSDF___
+
+----------------------------------------------------------------
+Keywords
+----------------------------------------------------------------
+
+IScript reserves a large number of keywords. A lot of these are
+not actually used, but are reserved for possible implementation
+in future. If it is decided they will not be used then will be
+released in newer versions.
+
+using include define ifdef ifndef object class extends while
+for do forever eachin to enum var const static internal network
+sync virtual override property extern export explicit friend
+goto namespace new delete operator private ref ptr sealed
+signed unsigned protected public strict final try catch finally
+throw raise literal if else end switch case default break continue
+state gotostate function event generator native abstract delegate
+return generic interface deprecated dynamic mutable volatile 
+register yield int long double float string dict list void value
+lock jump safe unsafe as base fixed out in this self get set
+
+----------------------------------------------------------------
+Strings
+----------------------------------------------------------------
+
+Strings literals in IScript can begin with either a quote or 
+double quote symbol, and can end with the same.
+
+	'asdf asdf sdf asdf asdfas'
+	"asdf asdf sdf asdf asdfas"
+
+You can also add special characters or use the same character
+used to open the string by using escape sequences. These are
+a backslash followed by a special character;
+
+	'asdf asdf \0\a\b\f\n\r\t\v sdf asdf \' asdfas'
+	"asdf asdf \0\a\b\f\n\r\t\v sdf asdf \" asdfas"
+
+Special characters;
+	
+	0   = Null Character  (0x0)
+	a   = Bell Character  (0x07)
+	b   = Backspace Char  (0x08)
+	f   = Form Feed       (0x0C)
+	n   = Line Feed       (0x0A)
+	r   = Carriage Return (0x0D)
+	t   = Horizontal Tab  (0x09)
+	v   = Vertical Tab    (0x0B)
+	"   = Double quote
+	'   = Single quote
+	x00 = Character equal to the HEX value suplied (eg. \x2F).
+
+If you don't want escape sequences to work in your strings you 
+can prefix the string with an @ symbol which will prevent
+escape sequences from being interpreted.
+	
+	@"as\0dfasdfasdfasdf134\ dfsdf\ a sdfga sd\"	  
+
+For especially long pieces of text where you don't want to worry
+about using escape sequences, you can start and end a string
+with 3 start characters, using this " and ' will be treated
+as normal text and will not need to be escaped.
+
+	"""
+		This is a long piece of text. Look it contains ' and
+		" characters, and still parses fine!
+	"""
+
+----------------------------------------------------------------
+Operators
+----------------------------------------------------------------
+
+XXX
+
+----------------------------------------------------------------
+Lists
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Dicts
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Functions
+----------------------------------------------------------------

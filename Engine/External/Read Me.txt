@@ -1,0 +1,5 @@
+This folder is where all external technology 
+(code not written by us!) should be stored.
+
+Make sure to keep license and readme files intact
+and in the solution file. 

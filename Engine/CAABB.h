@@ -1,0 +1,23 @@
+///////////////////////////////////////////////////////////////////////////////
+//  Icarus Game Engine
+//  Copyright © 2011 Timothy Leonard
+///////////////////////////////////////////////////////////////////////////////
+#pragma once
+
+#include "Conditionals.h"
+
+namespace Engine
+{
+    namespace Math
+    {
+
+		class CAABB
+		{
+			private:
+
+			public:
+
+		};
+
+	}
+}

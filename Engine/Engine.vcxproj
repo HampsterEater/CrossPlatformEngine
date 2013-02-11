@@ -1,0 +1,750 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Opt|Win32">
+      <Configuration>Debug Opt</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Opt|Xbox 360">
+      <Configuration>Debug Opt</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Xbox 360">
+      <Configuration>Debug</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Xbox 360">
+      <Configuration>Release</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0FD3AC13-BC40-465B-92B5-EB24F861942A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile>Engine.h</PrecompiledHeaderFile>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)Scripts\update_version.py" --file "$(ProjectDir)version.h"
+"$(SolutionDir)Scripts\generate_code_glue.py" --dir "$(SolutionDir)\Engine" --file "$(ProjectDir)ScriptGlue.h" --libdir "$(SolutionDir)Bin\Assets\Lib"</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Building Resources ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_RELEASE;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile>Engine.h</PrecompiledHeaderFile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)Scripts\update_version.py" --file "$(ProjectDir)version.h"
+"$(SolutionDir)Scripts\generate_code_glue.py" --dir "$(SolutionDir)\Engine" --file "$(ProjectDir)ScriptGlue.h" --libdir "$(SolutionDir)Bin\Assets\Lib"</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Building Resources ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile>Engine.h</PrecompiledHeaderFile>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)Scripts\update_version.py" --file "$(ProjectDir)version.h"
+"$(SolutionDir)Scripts\generate_code_glue.py" --dir "$(SolutionDir)\Engine" --file "$(ProjectDir)ScriptGlue.h" --libdir "$(SolutionDir)Bin\Assets\Lib"</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Building Resources ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile>Engine.h</PrecompiledHeaderFile>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)Scripts\update_version.py" --file "$(ProjectDir)version.h"
+"$(SolutionDir)Scripts\generate_code_glue.py" --dir "$(SolutionDir)\Engine" --file "$(ProjectDir)ScriptGlue.h" --libdir "$(SolutionDir)Bin\Assets\Lib"</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Building Resources ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderFile>Engine.h</PrecompiledHeaderFile>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)Scripts\update_version.py" --file "$(ProjectDir)version.h"
+"$(SolutionDir)Scripts\generate_code_glue.py" --dir "$(SolutionDir)\Engine" --file "$(ProjectDir)ScriptGlue.h" --libdir "$(SolutionDir)Bin\Assets\Lib"</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Building Resources ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderFile>Engine.h</PrecompiledHeaderFile>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)Scripts\update_version.py" --file "$(ProjectDir)version.h"
+"$(SolutionDir)Scripts\generate_code_glue.py" --dir "$(SolutionDir)\Engine" --file "$(ProjectDir)ScriptGlue.h" --libdir "$(SolutionDir)Bin\Assets\Lib"</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Building Resources ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CCommandLineParser.cpp" />
+    <ClCompile Include="CScriptASTNode.cpp" />
+    <ClCompile Include="CScriptBlockASTNode.cpp" />
+    <ClCompile Include="CScriptBreakASTNode.cpp" />
+    <ClCompile Include="CScriptClassASTNode.cpp" />
+    <ClCompile Include="CScriptCompileContext.cpp" />
+    <ClCompile Include="CBreakpoint.cpp" />
+    <ClCompile Include="CCircle.cpp" />
+    <ClCompile Include="CHashTable.cpp" />
+    <ClCompile Include="CLine.cpp" />
+    <ClCompile Include="CMatrix2.cpp" />
+    <ClCompile Include="CMatrix4.cpp" />
+    <ClCompile Include="CRandom.cpp" />
+    <ClCompile Include="CRect.cpp" />
+    <ClCompile Include="CScriptContextObject.cpp" />
+    <ClCompile Include="CScriptContinueASTNode.cpp" />
+    <ClCompile Include="CScriptDictASTNode.cpp" />
+    <ClCompile Include="CScriptDictObject.cpp" />
+    <ClCompile Include="CScriptDoASTNode.cpp" />
+    <ClCompile Include="CScriptExpressionASTNode.cpp" />
+    <ClCompile Include="CScriptForASTNode.cpp" />
+    <ClCompile Include="CScriptForeachASTNode.cpp" />
+    <ClCompile Include="CScriptFunctionASTNode.cpp" />
+    <ClCompile Include="CScriptFunctionSymbol.cpp" />
+    <ClCompile Include="CScriptGenerator.cpp" />
+    <ClCompile Include="CScriptIteratorObject.cpp" />
+    <ClCompile Include="DNS.cpp" />
+    <ClCompile Include="ScriptFunctions_System.cpp" />
+    <ClCompile Include="ScriptGlue.cpp" />
+    <ClCompile Include="CScriptGotoStateASTNode.cpp" />
+    <ClCompile Include="CScriptIdentifierASTNode.cpp" />
+    <ClCompile Include="CScriptIfASTNode.cpp" />
+    <ClCompile Include="CScriptIntrinsicASTNode.cpp" />
+    <ClCompile Include="CScriptJumpTargetSymbol.cpp" />
+    <ClCompile Include="CScriptListASTNode.cpp" />
+    <ClCompile Include="CScriptListObject.cpp" />
+    <ClCompile Include="CScriptLiteralASTNode.cpp" />
+    <ClCompile Include="CScriptObject.cpp" />
+    <ClCompile Include="CScriptOperatorASTNode.cpp" />
+    <ClCompile Include="CScriptReturnASTNode.cpp" />
+    <ClCompile Include="CScriptStateASTNode.cpp" />
+    <ClCompile Include="CScriptStateSymbol.cpp" />
+    <ClCompile Include="CScriptStringObject.cpp" />
+    <ClCompile Include="CScriptStringSymbol.cpp" />
+    <ClCompile Include="CScriptSwitchASTNode.cpp" />
+    <ClCompile Include="CScriptSwitchCaseASTNode.cpp" />
+    <ClCompile Include="CScriptSwitchDefaultASTNode.cpp" />
+    <ClCompile Include="CScriptUsingASTNode.cpp" />
+    <ClCompile Include="CScriptVariableASTNode.cpp" />
+    <ClCompile Include="CScriptVariableSymbol.cpp" />
+    <ClCompile Include="CScriptWhileASTNode.cpp" />
+    <ClCompile Include="CScriptYieldASTNode.cpp" />
+    <ClCompile Include="CSpline.cpp" />
+    <ClCompile Include="CScriptSymbol.cpp" />
+    <ClCompile Include="CVector3.cpp" />
+    <ClCompile Include="CVector4.cpp" />
+    <ClCompile Include="External.cpp" />
+    <ClCompile Include="External\RSA\RSA\o-RSA\bigInt\BigInteger.cc" />
+    <ClCompile Include="External\RSA\RSA\o-RSA\bigInt\BigIntegerAlgorithms.cc" />
+    <ClCompile Include="External\RSA\RSA\o-RSA\bigInt\BigIntegerUtils.cc" />
+    <ClCompile Include="External\RSA\RSA\o-RSA\bigInt\BigUnsigned.cc" />
+    <ClCompile Include="External\RSA\RSA\o-RSA\bigInt\BigUnsignedInABase.cc" />
+    <ClCompile Include="External\RSA\RSA\o-RSA\cryptStream.cpp" />
+    <ClCompile Include="External\RSA\RSA\o-RSA\o-RSA.cpp" />
+    <ClCompile Include="External\RSA\RSA\o-RSA\Prime.cpp" />
+    <ClCompile Include="External\TinyXML2\tinyxml2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TemplateHelper.cpp" />
+    <ClCompile Include="Win32_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Win32_Entry.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Win32_FileSystem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Win32_Sockets.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Win32_System.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Win32_Threads.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="CCommandLineParser.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="CScriptASTNode.h" />
+    <ClInclude Include="CScriptBlockASTNode.h" />
+    <ClInclude Include="CScriptBreakASTNode.h" />
+    <ClInclude Include="CScriptClassASTNode.h" />
+    <ClInclude Include="CScriptCompileContext.h" />
+    <ClInclude Include="CDebugPrintTaskJob.h" />
+    <ClInclude Include="CBase64Decoder.h" />
+    <ClInclude Include="CBase64Encoder.h" />
+    <ClInclude Include="CAllocator.h" />
+    <ClInclude Include="CArray.h" />
+    <ClInclude Include="CBreakpoint.h" />
+    <ClInclude Include="CCircle.h" />
+    <ClInclude Include="CScriptContextObject.h" />
+    <ClInclude Include="CScriptContinueASTNode.h" />
+    <ClInclude Include="CScriptDictObject.h" />
+    <ClInclude Include="CScriptDictASTNode.h" />
+    <ClInclude Include="CScriptDoASTNode.h" />
+    <ClInclude Include="CScriptExpressionASTNode.h" />
+    <ClInclude Include="CScriptForASTNode.h" />
+    <ClInclude Include="CScriptForeachASTNode.h" />
+    <ClInclude Include="CScriptFunctionASTNode.h" />
+    <ClInclude Include="CScriptFunctionSymbol.h" />
+    <ClInclude Include="CScriptGenerator.h" />
+    <ClInclude Include="CScriptIteratorObject.h" />
+    <ClInclude Include="DNS.h" />
+    <ClInclude Include="ScriptFunctions_System.h" />
+    <ClInclude Include="ScriptGlue.h" />
+    <ClInclude Include="CScriptGotoStateASTNode.h" />
+    <ClInclude Include="CScriptIdentifierASTNode.h" />
+    <ClInclude Include="CScriptIfASTNode.h" />
+    <ClInclude Include="CScriptIntrinsicASTNode.h" />
+    <ClInclude Include="CScriptInstruction.h" />
+    <ClInclude Include="CScriptJumpTargetSymbol.h" />
+    <ClInclude Include="CScriptListObject.h" />
+    <ClInclude Include="CScriptListASTNode.h" />
+    <ClInclude Include="CScriptLiteralASTNode.h" />
+    <ClInclude Include="CScriptModuleObject.h" />
+    <ClInclude Include="CScriptObject.h" />
+    <ClInclude Include="CScriptOperatorASTNode.h" />
+    <ClInclude Include="CScriptParser.h" />
+    <ClInclude Include="CConditionVariable.h" />
+    <ClInclude Include="CHashTable.h" />
+    <ClInclude Include="CFilePackageStream.h" />
+    <ClInclude Include="CINIFile.h" />
+    <ClInclude Include="CScriptLexer.h" />
+    <ClInclude Include="CLine.h" />
+    <ClInclude Include="CMatrix2.h" />
+    <ClInclude Include="CMatrix4.h" />
+    <ClInclude Include="CCRC32Encoder.h" />
+    <ClInclude Include="CPublicKeyDecryptor.h" />
+    <ClInclude Include="CPublicKeyEncryptor.h" />
+    <ClInclude Include="CRandom.h" />
+    <ClInclude Include="CRect.h" />
+    <ClInclude Include="CScriptReturnASTNode.h" />
+    <ClInclude Include="CScriptStateASTNode.h" />
+    <ClInclude Include="CScriptStateSymbol.h" />
+    <ClInclude Include="CScriptStringObject.h" />
+    <ClInclude Include="CScriptStringSymbol.h" />
+    <ClInclude Include="CScriptSwitchASTNode.h" />
+    <ClInclude Include="CScriptSwitchCaseASTNode.h" />
+    <ClInclude Include="CScriptSwitchDefaultASTNode.h" />
+    <ClInclude Include="CScriptSymbolObject.h" />
+    <ClInclude Include="CScriptUsingASTNode.h" />
+    <ClInclude Include="CScriptVariableASTNode.h" />
+    <ClInclude Include="CScriptVariableSymbol.h" />
+    <ClInclude Include="CScriptWhileASTNode.h" />
+    <ClInclude Include="CScriptYieldASTNode.h" />
+    <ClInclude Include="CSpline.h" />
+    <ClInclude Include="CScriptSymbol.h" />
+    <ClInclude Include="CTaskJob.h" />
+    <ClInclude Include="CVector3.h" />
+    <ClInclude Include="CVector4.h" />
+    <ClInclude Include="CXMLFile.h" />
+    <ClInclude Include="CDataTransformer.h" />
+    <ClInclude Include="CFilePackage.h" />
+    <ClInclude Include="CFileStream.h" />
+    <ClInclude Include="CFileSystem.h" />
+    <ClInclude Include="CGameEngine.h" />
+    <ClInclude Include="CHTTPStream.h" />
+    <ClInclude Include="CMatrix3.h" />
+    <ClInclude Include="CMemoryStream.h" />
+    <ClInclude Include="CQuaternion.h" />
+    <ClInclude Include="CScriptManager.h" />
+    <ClInclude Include="CSocketStream.h" />
+    <ClInclude Include="CStream.h" />
+    <ClInclude Include="CTaskManager.h" />
+    <ClInclude Include="CVector2.h" />
+    <ClInclude Include="CScriptVirtualMachine.h" />
+    <ClInclude Include="CZipCompressor.h" />
+    <ClInclude Include="CZipDecompressor.h" />
+    <ClInclude Include="CFrameAllocator.h" />
+    <ClInclude Include="CHeapAllocator.h" />
+    <ClInclude Include="CList.h" />
+    <ClInclude Include="CLog.h" />
+    <ClInclude Include="CMutex.h" />
+    <ClInclude Include="Conditionals.h" />
+    <ClInclude Include="CProxyAllocator.h" />
+    <ClInclude Include="CSemaphore.h" />
+    <ClInclude Include="CSocket.h" />
+    <ClInclude Include="CString.h" />
+    <ClInclude Include="CThread.h" />
+    <ClInclude Include="CThreadLocalData.h" />
+    <ClInclude Include="Endianness.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="External.h" />
+    <ClInclude Include="External\RSA\RSA\o-RSA\cryptStream.h" />
+    <ClInclude Include="External\RSA\RSA\o-RSA\o-RSA.h" />
+    <ClInclude Include="External\RSA\RSA\o-RSA\Prime.h" />
+    <ClInclude Include="External\TinyXML2\tinyxml2.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="External\ZLib\crc32.h" />
+    <ClInclude Include="External\ZLib\deflate.h" />
+    <ClInclude Include="External\ZLib\gzguts.h" />
+    <ClInclude Include="External\ZLib\inffast.h" />
+    <ClInclude Include="External\ZLib\inffixed.h" />
+    <ClInclude Include="External\ZLib\inflate.h" />
+    <ClInclude Include="External\ZLib\inftrees.h" />
+    <ClInclude Include="External\ZLib\trees.h" />
+    <ClInclude Include="External\ZLib\zconf.h" />
+    <ClInclude Include="External\ZLib\zlib.h" />
+    <ClInclude Include="External\ZLib\zutil.h" />
+    <ClInclude Include="Math.h" />
+    <ClInclude Include="CMD5Encoder.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="Platform.h" />
+    <ClInclude Include="TemplateHelper.h" />
+    <ClInclude Include="Version.h" />
+    <ClCompile Include="CBase64Decoder.cpp" />
+    <ClCompile Include="CBase64Encoder.cpp" />
+    <ClCompile Include="CCRC32Encoder.cpp" />
+    <ClCompile Include="CFilePackageStream.cpp" />
+    <ClCompile Include="CMD5Encoder.cpp" />
+    <ClCompile Include="CPublicKeyDecryptor.cpp" />
+    <ClCompile Include="CPublicKeyEncryptor.cpp" />
+    <ClCompile Include="CZipCompressor.cpp" />
+    <ClCompile Include="CZipDecompressor.cpp" />
+    <ClCompile Include="Endianness.cpp" />
+    <ClCompile Include="External\ZLib\adler32.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="External\ZLib\compress.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="External\ZLib\crc32.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="External\ZLib\deflate.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="External\ZLib\gzclose.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="External\ZLib\gzlib.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="External\ZLib\gzread.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="External\ZLib\gzwrite.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="External\ZLib\infback.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="External\ZLib\inffast.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="External\ZLib\inflate.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="External\ZLib\inftrees.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="External\ZLib\trees.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="External\ZLib\uncompr.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="External\ZLib\zutil.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Win32.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="Win32_Debug.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Win32_Entry.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Win32_FileSystem.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Win32_Sockets.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Win32_System.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Win32_Threads.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">true</ExcludedFromBuild>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CAllocator.cpp" />
+    <ClCompile Include="CArray.cpp" />
+    <ClCompile Include="CScriptParser.cpp" />
+    <ClCompile Include="CConditionVariable.cpp" />
+    <ClCompile Include="CINIFile.cpp" />
+    <ClCompile Include="CScriptLexer.cpp" />
+    <ClCompile Include="CXMLFile.cpp" />
+    <ClCompile Include="CDataTransformer.cpp" />
+    <ClCompile Include="CFilePackage.cpp" />
+    <ClCompile Include="CFileStream.cpp" />
+    <ClCompile Include="CFileSystem.cpp" />
+    <ClCompile Include="CGameEngine.cpp" />
+    <ClCompile Include="CHTTPStream.cpp" />
+    <ClCompile Include="CMatrix3.cpp" />
+    <ClCompile Include="CMemoryStream.cpp" />
+    <ClCompile Include="CQuaternion.cpp" />
+    <ClCompile Include="CScriptManager.cpp" />
+    <ClCompile Include="CSocketStream.cpp" />
+    <ClCompile Include="CStream.cpp" />
+    <ClCompile Include="CTaskManager.cpp" />
+    <ClCompile Include="CVector2.cpp" />
+    <ClCompile Include="CScriptVirtualMachine.cpp" />
+    <ClCompile Include="CFrameAllocator.cpp" />
+    <ClCompile Include="CHeapAllocator.cpp" />
+    <ClCompile Include="CList.cpp" />
+    <ClCompile Include="CLog.cpp" />
+    <ClCompile Include="CMutex.cpp" />
+    <ClCompile Include="CProxyAllocator.cpp" />
+    <ClCompile Include="CSemaphore.cpp" />
+    <ClCompile Include="CSocket.cpp" />
+    <ClCompile Include="CString.cpp" />
+    <ClCompile Include="CThread.cpp" />
+    <ClCompile Include="CThreadLocalData.cpp" />
+    <ClCompile Include="Math.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="Platform.cpp" />
+    <ClCompile Include="Win32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Opt|Xbox 360'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CScriptInstruction.cpp" />
+    <None Include="External\RSA\RSA\o-RSA\bigInt\BigInteger.hh" />
+    <None Include="External\RSA\RSA\o-RSA\bigInt\BigIntegerAlgorithms.hh" />
+    <None Include="External\RSA\RSA\o-RSA\bigInt\BigIntegerLibrary.hh" />
+    <None Include="External\RSA\RSA\o-RSA\bigInt\BigIntegerUtils.hh" />
+    <None Include="External\RSA\RSA\o-RSA\bigInt\BigUnsigned.hh" />
+    <None Include="External\RSA\RSA\o-RSA\bigInt\BigUnsignedInABase.hh" />
+    <None Include="External\RSA\RSA\o-RSA\bigInt\NumberlikeArray.hh" />
+    <None Include="opcodes.def" />
+    <None Include="Read Me.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

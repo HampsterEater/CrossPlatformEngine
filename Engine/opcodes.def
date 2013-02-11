@@ -1,0 +1,95 @@
+// Load / Store
+X(LDI)			// loadint		reg, int
+X(LDF)			// loadfloat	reg, float
+X(LDS)			// loadstring	reg, index
+X(LDN)			// loadnull		reg
+
+X(LLOCAL)		// loadlocal   reg, index
+X(SLOCAL)		// storelocal  reg, index
+X(LGLOBAL)		// loadglobal  reg, index
+X(SGLOBAL)		// storeglobal reg, index
+X(LFUNC)		// loadfunc    reg, index
+X(SFUNC)		// storefunc   reg, index
+
+// Stack
+X(PUSH)			// push register
+
+// Arithmatic
+X(MOV)			// mov dest, src
+X(ADD)			// add dest, src
+X(SUB)			// sub dest, src
+X(MUL)			// mul dest, src
+X(DIV)			// div dest, src
+X(INC)			// inc dest
+X(DEC)			// dec dest
+X(NEG)			// neg dest
+X(ABS)			// abs dest
+X(MOD)			// mod dest, src
+
+X(BWOR)			// bwor	 dest, src
+X(BWXOR)		// bwxor dest, src
+X(BWAND)		// bwand dest, src
+X(BWNOT)		// bwnot dest
+X(BWSHL)		// bwshl dest, src
+X(BWSHR)		// bwshr dest, src
+
+// Branching
+X(CMP)			// cmp	 reg1, reg2
+X(JMP)			// jmp	 address
+X(JEQ)			// jeq	 address
+X(JL)			// jl	 address
+X(JG)			// jg	 address
+X(JLE)			// jle	 address
+X(JGE)			// jge	 address
+X(JNE)			// jne	 address
+				
+X(IEQ)			// ieq	 reg1, reg2
+X(IL)			// il	 reg1, reg2
+X(IG)			// ig	 reg1, reg2
+X(ILE)			// ile	 reg1, reg2
+X(IGE)			// ige	 reg1, reg2
+X(INE)			// ine	 reg1, reg2
+
+// Boolean Logic
+X(LAND)			// land	 reg1, reg2
+X(LOR)			// lor	 reg1, reg2
+X(LNOT)			// lnot	 reg1
+
+// Subscript
+X(IDX)			// idx	reg1, reg2					- Get symbol at index.
+X(IDXS)			// idx	reg1, reg2, valuereg 		- Set symbol at index.
+				
+// Indirection
+X(INDR)			// indr reg1, symbol    - This takes the object in reg1 and returns the object with the same name as symbol inside it. eg. module.x would turn into indr module, x		
+X(INDRS)		// indrs reg1, symbol, valuereg   - Same as above, except it sets rather than gets the value.
+
+// Invokation.
+X(INVK)			// invk register, parametercount
+X(RET)			// ret / ret ret_val_reg
+X(YIELD)		// yield valuereg
+
+// State code.
+X(SETSTATE)		// setstate symbol
+
+// Native binding.
+X(GETNATIVE)	// getnative register
+
+// Dictionaries
+X(DICTNEW)		// dictnew register
+X(DICTADD)		// dictadd register, key_register, value_register
+
+// Lists
+X(LISTNEW)		// listnew register
+X(LISTADD)		// listadd register, value_register	
+
+// Dependencies.
+X(LOADMODULE)	// loadmodule output_reg, name
+
+// Iteration.
+X(ITERNEW)		// ITERNEW  context_reg, value_reg			:		Creates a context from value that can be iterated over.
+X(ITERDONE)		// ITERDONE output_reg, context_reg 
+X(ITERNEXT)		// ITERNEXT output_reg, context_reg
+
+// Symbol type.
+X(ISTYPE)		// istype output_reg, symbol
+X(ASTYPE)		// astype output_reg, symbol

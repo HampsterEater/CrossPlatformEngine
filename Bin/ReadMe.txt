@@ -1,0 +1,1 @@
+This is the main game folder, build your assets in here!

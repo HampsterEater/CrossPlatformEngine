@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcxproj", "{0FD3AC13-BC40-465B-92B5-EB24F861942A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game", "Game\Game.vcxproj", "{96FE06DE-59F2-4958-81CC-E70F88D186E0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A} = {0FD3AC13-BC40-465B-92B5-EB24F861942A}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{98C7CD49-AC23-4F34-87E3-915859206A98}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\generate_code_glue.py = Scripts\generate_code_glue.py
+		Scripts\update_version.py = Scripts\update_version.py
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bin", "Bin", "{7440A1C3-128B-4587-811D-413F4007F4B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{E3E9E1BB-268B-4E0C-9CF2-7EF63885275B}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\Overview.txt = Docs\Overview.txt
+		Scripting Language.txt = Scripting Language.txt
+		Docs\Todo.txt = Docs\Todo.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{40E7C78E-C7BA-4D16-9BFD-E00460813E78}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Assets\test.script = Bin\Assets\test.script
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{7AE2CFEA-825E-4670-9C21-39EEA75502A5}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Opt|Win32 = Debug Opt|Win32
+		Debug Opt|Xbox 360 = Debug Opt|Xbox 360
+		Debug|Win32 = Debug|Win32
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Win32 = Release|Win32
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A}.Debug Opt|Win32.ActiveCfg = Debug Opt|Win32
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A}.Debug Opt|Win32.Build.0 = Debug Opt|Win32
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A}.Debug Opt|Xbox 360.ActiveCfg = Debug Opt|Xbox 360
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A}.Debug Opt|Xbox 360.Build.0 = Debug Opt|Xbox 360
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A}.Debug Opt|Xbox 360.Deploy.0 = Debug Opt|Xbox 360
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A}.Debug|Win32.Build.0 = Debug|Win32
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A}.Release|Win32.ActiveCfg = Release|Win32
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A}.Release|Win32.Build.0 = Release|Win32
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{0FD3AC13-BC40-465B-92B5-EB24F861942A}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{96FE06DE-59F2-4958-81CC-E70F88D186E0}.Debug Opt|Win32.ActiveCfg = Debug Opt|Win32
+		{96FE06DE-59F2-4958-81CC-E70F88D186E0}.Debug Opt|Win32.Build.0 = Debug Opt|Win32
+		{96FE06DE-59F2-4958-81CC-E70F88D186E0}.Debug Opt|Xbox 360.ActiveCfg = Debug Opt|Xbox 360
+		{96FE06DE-59F2-4958-81CC-E70F88D186E0}.Debug Opt|Xbox 360.Build.0 = Debug Opt|Xbox 360
+		{96FE06DE-59F2-4958-81CC-E70F88D186E0}.Debug Opt|Xbox 360.Deploy.0 = Debug Opt|Xbox 360
+		{96FE06DE-59F2-4958-81CC-E70F88D186E0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{96FE06DE-59F2-4958-81CC-E70F88D186E0}.Debug|Win32.Build.0 = Debug|Win32
+		{96FE06DE-59F2-4958-81CC-E70F88D186E0}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{96FE06DE-59F2-4958-81CC-E70F88D186E0}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{96FE06DE-59F2-4958-81CC-E70F88D186E0}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{96FE06DE-59F2-4958-81CC-E70F88D186E0}.Release|Win32.ActiveCfg = Release|Win32
+		{96FE06DE-59F2-4958-81CC-E70F88D186E0}.Release|Win32.Build.0 = Release|Win32
+		{96FE06DE-59F2-4958-81CC-E70F88D186E0}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{96FE06DE-59F2-4958-81CC-E70F88D186E0}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{96FE06DE-59F2-4958-81CC-E70F88D186E0}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40E7C78E-C7BA-4D16-9BFD-E00460813E78} = {7440A1C3-128B-4587-811D-413F4007F4B0}
+	EndGlobalSection
+EndGlobal

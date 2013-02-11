@@ -1,0 +1,51 @@
+This is a very basic overview of the source tree, where things are stored
+and how things things should be maintained.
+
+Do not use standard library:
+
+   The C++ STL / Standard Library, although useful, are designed for general use! They are not best designed for games, controlling their memory allocation is also difficult.
+   As such, none of it should be used unless avoidable. Slimmed down and optimized reimplementations should be made of any code that is needed. See CArray/CString/CList for examples.
+
+Platform Agnostic Code:
+
+   The engine is designed to be platform agnostic, to maximize portability (I'm aiming for Win/Mac/Linux/iOS portability at the moment). 
+   All platform-specific code should be kept in the Engine::Platform namespace. If you look at the code you will see how this is achieved.
+   Platform.h defines all the functions that all platforms must implement, it then includes the actual implementation of the code based on the platform (Win32/etc) in the .inc.h/.inc.cpp    files. If you want to add more platform specific functionality, make sure its available (or can be emulated) on all platforms, and add a definition to platform.h and an implementation    for all platforms.
+
+   The aim of all of this is that to port to another platform all you should theoretically have to do is copy Engine\Platform\Win32\Win32.h/cpp, paste into a new platform folder and swap    out the code with whats appropriate for the platform. -> very simple to port!
+  
+   Platform specific conditionals/defines should go in Conditionals.h, which is included in pretty much every file.
+
+Robust Error Handling:
+  
+   Make sure if something can go wrong in your code (file couldn't be opened, null parameter passed, etc) you 
+   log the error with the log macros in log.h LOG_INFO(x) etc. If the error could potentially cause issues
+   for any other code, make sure you use LOG_CRITICAL so the game immediately aborts with an error description.
+
+Memory Allocation:
+
+   To speed up allocation, to debug leaks and to enforce working towards memory boundries - no calls to delete/new/malloc/free should ever be used in the code (using them will cause an
+   assert to fail by default). Instead an allocator should be used, these allocators (stored in Engine::Memory::Allocators) are special purpose and dseigned for high performance. If you class won't benefit from making a special purpose allocator for it, you can just use Engine::Memory::GetDefaultAllocator(), though if your working on a specific subsystem of the engine (types, graphics, audio, etc), its best to create a ProxyAllocator and use that, that way allocations from specific subsystems can be tracked.
+
+   Also, if you write allocators - make sure to implement pointer alignment! Again, this is to make porting between platforms easier.
+
+   Allocators are fairly simple to use. To allocate a block of memory use ->Alloc(size) and to free it use ->Free(ptr). There are also some helper functions for allocating class instances if you don't want to use the placement new syntax yourself. Namely you can call ->NewObj<type>(...arguments...) and ->FreeObj(objPtr) 
+
+   Even with this nice allocation system though, best practices for game development should be used, namely; avoid allocation memory like the plague. You should only allocate memory when you absoultely have to, and you should NEVER allocate memory during a frame.
+
+   Also note that if you fail to free memory the game will fail an assert while exiting and will dump all leak information. If you see this assert happen - FIX YOUR LEAKS.
+
+Layout:
+
+   Every folder in the source code represents a new namespace in the engine. Code should ALWAYS be contained in a namespace, nothing should ever go in the global scope. You should also never have a folder that dosen't represent a namespace. This is designed to prevent name clashes and to keep things organised into discret sections.
+
+Coding Style:
+
+   Variables should be named likeThisOk
+   Member variables should be named _likeThisOk
+   Constants/defines should be named LIKE_THIS_OK
+   Globals should be named g_like_this_ok
+   Classes should be named CLikeThisOk
+   Tab in on every { and Tab out on every }
+      
+   Do not overcomment, but do not undercomment. Comment only when its not immediately obvious what your code does.

@@ -1,0 +1,13 @@
+///////////////////////////////////////////////////////////////////////////////
+//  Icarus Game Engine
+//  Copyright © 2011 Timothy Leonard
+///////////////////////////////////////////////////////////////////////////////
+
+#include "CXMLFile.h"
+#include "CStream.h"
+#include "CLog.h"
+#include "CArray.h"
+
+using namespace Engine::FileSystem::Config;
+
+#include "External\TinyXML2\tinyxml2.cpp"
